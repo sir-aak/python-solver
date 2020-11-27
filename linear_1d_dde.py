@@ -36,8 +36,8 @@ def view ():
     time, Y = numInt()
 
     plt.figure(figsize=(10, 5.6))
-    plt.suptitle("time series")
-    plt.title(r"linear 1D dde: $f(y(t), y(t-\tau), t) = -ay(t) + by(t - \tau)$", 
+    plt.suptitle("linear 1D dde: time series")
+    plt.title(r"$f(y(t), y(t-\tau), t) = -ay(t) + by(t - \tau)$", 
                  fontsize=14)
     plt.plot(time, Y)
     plt.xlabel(r"time $t$")

@@ -59,8 +59,8 @@ def plotSingle ():
     
     # plot data
     plt.figure(figsize=(8, 6))
-    plt.suptitle("time series")
-    plt.title(r"linear SDE $dX_t = aX_t\,dt + bX_t\,dW_t$", fontsize=14)
+    plt.suptitle("linear sde: time series")
+    plt.title(r"$dX_t = aX_t\,dt + bX_t\,dW_t$", fontsize=14)
     plt.plot(time, X)
     plt.xlabel(r"time $t$")
     plt.ylabel(r"$X(t)$")
@@ -128,8 +128,8 @@ def plotMulti ():
     
     # plot data
     plt.figure(figsize=(12, 9))
-    plt.suptitle("averaged time series for " + str(nSims) + " simulations, " + "dt = " + str(dt))
-    plt.title(r"linear SDE $dX_t = aX_t\,dt + bX_t\,dW_t$", fontsize=14)    
+    plt.suptitle("linear sde: averaged time series for " + str(nSims) + " simulations, " + "dt = " + str(dt))
+    plt.title(r"$dX_t = aX_t\,dt + bX_t\,dW_t$", fontsize=14)    
     
     #~ for i in range(nSims):
         #~ plt.plot(time, Ana[:, i], color="blue", alpha=0.05)

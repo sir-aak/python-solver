@@ -43,7 +43,7 @@ def view():
     
     fig = plt.figure()
     fig.suptitle("delay controlled instable focus", fontsize=18)
-    fig.set_size_inches(15, 7)
+    fig.set_size_inches(14, 6)
     fig.subplots_adjust(wspace=0.3)
     
     plt.subplot(1, 2, 1)
@@ -55,8 +55,8 @@ def view():
     plt.grid(color="lightgray")
     
     plt.subplot(1, 2, 2)
-    plt.plot(X, Y, zorder=2)
-    plt.plot(X[0], Y[0], color="orange", marker="o", markersize=6, zorder=3)
+    plt.plot(X, Y, color="black", zorder=2)
+    plt.plot(X[0], Y[0], color="red", marker="o", markersize=6, zorder=3)
     plt.title("phase space", fontsize=16)
     plt.xlabel(r"$x$")
     plt.ylabel(r"$y$")

@@ -45,7 +45,7 @@ def view ():
     
     ax1 = fig.add_subplot(1, 2, 1)
     ax1.plot(time, X, label=r"$x(t)$")
-    ax1.plot(time, Y, label=r"$y(t)$")
+    ax1.plot(time, Y, label=r"$y(t)$", linestyle="--")
     ax1.plot(time, Z, label=r"$z(t)$")
     ax1.set_title("time series", fontsize=16)
     ax1.set_xlabel(r"time $t$")
@@ -53,8 +53,8 @@ def view ():
     ax1.grid(color="lightgray")
     
     ax2 = fig.add_subplot(1, 2, 2, projection="3d")
-    ax2.plot3D(X, Y, Z, lw=1, zorder=-1)
-    ax2.scatter(X[0], Y[0], Z[0], color="orange", marker="o")
+    ax2.plot3D(X, Y, Z, lw=1, color="black", zorder=-1)
+    ax2.scatter(X[0], Y[0], Z[0], color="red", marker="o")
     ax2.set_title("phase space", fontsize=16)
     ax2.set_xlabel(r"$x$", labelpad=10)
     ax2.set_ylabel(r"$y$", labelpad=10)
